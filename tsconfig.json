@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2022", // 出力されるJavaScriptのバージョンを指定（ES2022の構文や機能を使用可能）
+    "module": "NodeNext", // Node.jsのESM仕様に合わせたモジュール（import/export）形式で出力
+    "moduleResolution": "NodeNext", // Node.js ESM対応のモジュール解決方法を使用（拡張子やexportsフィールド対応）
+    "experimentalDecorators": true, // デコレーター（@propertyなど）の構文を有効化
+    "useDefineForClassFields": false, // クラスフィールド初期化の仕様をES標準に合わせる（定義時に値をセット）
+
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "types": ["node"]
+  }
+}
