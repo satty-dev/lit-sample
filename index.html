@@ -13,11 +13,28 @@
 </head>
 
 <body>
+  <!--
   <my-element>
     <h1>Vite + Lit</h1>
   </my-element>
+  -->
+
+  <!--
   <native-hello></native-hello>
+  -->
+  
+  <!--
   <my-greeting name="Web Components"></my-greeting>
+  -->
+  
+  <my-button></my-button>
+  <script type="module">
+    document.querySelector('my-button')?.addEventListener('my-click', (event) => {
+      const detail = event.detail;
+      alert(detail.message);
+    });
+  </script>
+
 </body>
 
 </html>
